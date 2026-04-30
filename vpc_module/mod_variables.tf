@@ -8,7 +8,7 @@ variable "AWS_region" {
 variable "vpc_cidr" {
     description = "CIDR block for VPC"
     type = string
-    default = "10.0.0.0/16"
+    default = "10.0.1.0/16"
   
 }
 
@@ -31,6 +31,6 @@ variable "tags" {
 variable "environment_name" {
     description ="Environment name used in resource names and tags"
     type = string
-    default = "dev"
+    default = "prod"
   
 }
