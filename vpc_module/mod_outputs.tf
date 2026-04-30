@@ -1,0 +1,26 @@
+
+output "public_subnets" {
+  value = module.vpc.public_subnets
+}
+output "private_subnets" {
+  value = module.vpc.private_subnets
+}
+output "vpc_id" {
+  value = module.vpc.vpc_id
+  description = "The ID of the created VPC"
+}
+
+output "public_subnets_ids" {
+  value = module.vpc.public_subnets_ids
+  description = "List of public subnet IDs"
+  
+}
+output "private_subnets_ids" {
+  value = module.vpc.private_subnets_ids
+  description = "List of private subnet IDs"
+  
+}
+output "public_subnets_map" {
+  value = module.vpc.public_subnets_map
+  description = "Map of AZ to public Subnet ID"
+  }
